@@ -307,9 +307,13 @@ public class PolyService {
 		for(int i = 0; i < arr.length; i++) {
 			System.out.println(i + "번째 요소 : " + arr[i].toString());
 			// 실행 전 : String edu.kh.poly.model.vo.Car.toString() - 정적바인딩
-			
+			// 실행 후 : 각 객체의 오버라이딩 된 toString()이 호출됨 - 동적 바인딩
 		}
 		
+		// ** 동적 바인딩 장점 **
+		// - 업캐스팅 상태의 참조변수를
+		// 별도의 다운 캐스팅 없이
+		// 자식의 오버라이딩 된 메소드를 수행할 수 있다
 		
 		
 		
